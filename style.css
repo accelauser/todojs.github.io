@@ -1,0 +1,96 @@
+:root{
+  --main-bg-color: black;
+  --main-text-color: white;
+}
+
+body {
+    background-color: black;
+    background: black;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-size: 250%;
+}
+
+p {
+    color: white;
+    font-family: Arial;
+    font-size: 100%;
+} 
+
+button {
+  padding: 5px 5px;
+}
+
+li {
+  color:white;
+  font-family: Arial;
+  font-size: 100%;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+.styled {
+  border: 1px solid white;
+  border-color: white;
+  border-radius: 7px;
+
+  line-height: 2.5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 0px #000;
+  background-color: black;
+}
+
+.styled:hover {
+  color: white;
+  background-color: black;
+  border-color: red;
+}
+
+.taskCreator{
+  display: none;
+}
+
+.taskCreator.active{
+  display: block;
+}
+
+.invis{
+  color:white;
+  background-color: black;
+  border: 0px;
+}
+
+.invis:hover{
+  border: 0px;
+  border-radius: 7px;
+  color:black;
+  background-color: white;
+}
+
+.smallBtn{
+  padding: 0px 10px;
+}
+
+.Task {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 10px 10px;
+}
+
+.Task:hover{
+  border: 1px solid white;
+  border-color: white;
+}

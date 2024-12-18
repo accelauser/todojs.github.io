@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Todo List </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: left
+        }
+        li a:hover{
+            border: 1px;
+            border-color: white;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Todo list [X]</h1>
+    <button class="styled" id="openCreator" onclick="showdiv()"> Create new task:</button>
+    <div>'            '</div>
+    <div class="styled taskCreator" id = "taskCreator">
+        
+        <form id="creatorFrom" onsubmit="createTask(event, Task)">
+            <input type="text" name='taskName' placeholder="Task name">
+            <input type="text" name='taskDesc' placeholder="Task Description">
+            <input type="date" name='taskDead' placeholder="Task deadline">
+            <button class = "styled" type="submit" >Create</button>
+            <button class="styled smallBtn" id="closeCreator" onclick="closeDiv()">X</button>
+        </form>
+      </div>
+    <ol class="taskList">
+        <p>Task list: </p>
+    </ol>
+    <script type="text/javascript" src='./javascript/index.js' crossorigin="anonymous"></script>
+</body>
+
+</html>

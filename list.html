@@ -20,22 +20,28 @@
 
 <body>
     <h1>Todo list [X]</h1>
-    <button class="styled" id="openCreator" onclick="showdiv()"> Create new task:</button>
+    <button class="styled" id="openCreator" > Create new task:</button>
     <div>'            '</div>
     <div class="styled taskCreator" id = "taskCreator">
         
-        <form id="creatorFrom" onsubmit="createTask(event)">
+        <form id="creatorFrom" >
             <input type="text" name='taskName' placeholder="Task name">
             <input type="text" name='taskDesc' placeholder="Task Description">
             <input type="date" name='taskDead' placeholder="Task deadline">
             <button class = "styled" type="submit" >Create</button>
-            <button class="styled smallBtn" id="closeCreator" onclick="closeDiv()">X</button>
+            <button class="styled smallBtn" id="closeCreator" >X</button>
         </form>
       </div>
     <ol class="taskList">
         <p>Task list: </p>
     </ol>
-    <script type="text/javascript" src="./javascript/index.js" crossorigin="anonymous"></script>
+    <script type='module' src='./javascript/tasks.js'></script>
+    <script type="module">
+        import * as index from './javascript/index.js'
+        index.showDiv()
+        index.closeDiv()
+        index.submitTaskForm()
+    </script>
 </body>
 
 </html>
